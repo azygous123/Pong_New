@@ -11,6 +11,16 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isUpPressed = Input.GetKey(KeyCode.W);
+        bool isDownPressed = Input.GetKey(KeyCode.S);
         
+        if (isUpPressed)
+        {
+            transform.Translate(Vector2.up * 10f * Time.deltaTime);
+        }
+        else if (isDownPressed)
+        {
+            transform.Translate(Vector2.down * 10f * Time.deltaTime);
+        }
     }
 }
