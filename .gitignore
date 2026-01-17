@@ -114,3 +114,16 @@ __pycache__/
 ############################
 # DO NOT IGNORE META FILES
 !*.meta
+/Assets/Ball.cs.meta
+/Assets/Bouncy.physicsMaterial2D
+/Assets/Bouncy.physicsMaterial2D.meta
+/Assets/DefaultVolumeProfile.asset
+/Assets/DefaultVolumeProfile.asset.meta
+/Assets/InputSystem_Actions.inputactions
+/Assets/InputSystem_Actions.inputactions.meta
+/Assets/Player1.cs
+/Assets/Player1.cs.meta
+/Assets/Scenes.meta
+/Assets/Settings.meta
+/Assets/UniversalRenderPipelineGlobalSettings.asset
+/Assets/UniversalRenderPipelineGlobalSettings.asset.meta
