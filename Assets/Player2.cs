@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player1 : Paddle
+public class Player2 : Paddle
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,12 +11,12 @@ public class Player1 : Paddle
     // Update is called once per frame
     void Update()
     {
-        bool isUpPressed = Input.GetKey(KeyCode.W);
-        bool isDownPressed = Input.GetKey(KeyCode.S);
-        
+        bool isUpPressed = Input.GetKey(KeyCode.UpArrow);
+        bool isDownPressed = Input.GetKey(KeyCode.DownArrow);
+
         if (isUpPressed)
         {
-            if (transform.position.y >= 5.5f)
+            if(transform.position.y >= 5.5f)
             {
                 return;
             }
@@ -24,11 +24,14 @@ public class Player1 : Paddle
         }
         else if (isDownPressed)
         {
-            if (transform.position.y <= -5.5f)
+            if(transform.position.y <= -5.5f)
             {
                 return;
             }
             transform.Translate(Vector2.down * 10f * Time.deltaTime);
         }
     }
+
+
+
 }
