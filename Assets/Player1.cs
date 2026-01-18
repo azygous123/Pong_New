@@ -11,6 +11,14 @@ public class Player1 : Paddle
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey("escape"))
+        { 
+            Debug.Log("Escape key pressed. Quitting application.");
+            Application.Quit();
+        }
+            
+
+
         bool isUpPressed = Input.GetKey(KeyCode.W);
         bool isDownPressed = Input.GetKey(KeyCode.S);
         
