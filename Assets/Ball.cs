@@ -44,7 +44,7 @@ public class Ball : MonoBehaviour
         float yVelocity = UnityEngine.Random.Range(-1, 1);
 
 
-        rb.linearVelocity = new Vector2(xVelocity * startingSpeed, yVelocity * startingSpeed * 0);
+        rb.linearVelocity = new Vector2(xVelocity * startingSpeed, yVelocity * startingSpeed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
